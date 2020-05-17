@@ -7,7 +7,7 @@ RUN cd / \
     && apk add --no-cache git \
     && npm install hexo-cli -g \
     && npm install hexo-generator-feed -g \
-    && echo "cp -R /hexo/source/. /opt/hexo/source && cp -R /hexo/themes/. /opt/hexo/themes && cp /hexo/_config.yml /opt/hexo/_config.yml && cd /opt/hexo && hexo clean && hexo g && hexo s" > start.sh \
+    && echo "cp -R /hexo/source/. /opt/hexo/source && cp -R /hexo/themes/. /opt/hexo/themes && cp /hexo/_config.yml /opt/hexo/_config.yml && cd /opt/hexo && hexo clean && hexo g && cp -R public/. /hexo/public && hexo s" > start.sh \
     && chmod +x start.sh \
     && mkdir /hexo \
     && mkdir /opt/hexo \
@@ -22,4 +22,4 @@ VOLUME /hexo
 
 EXPOSE 4000
 
-ENTRYPOINT ["sh","/opt/hexo/start.sh"]
+ENTRYPOINT ["sh","/start.sh"]
