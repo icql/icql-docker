@@ -10,5 +10,9 @@
     |-_config.yml
 
 # 启动
-docker run -it -p 4000:4000 -v /root/hexo:/hexo  --name hexo-test icql/hexo:0.2.0 /bin/bash
+docker run -it -p 4000:4000 -v /root/hexo:/hexo  --name hexo-test icql/hexo:0.2.1 /bin/bash
+
+# 脚本
+generate.sh (hexo g)
+start.sh (hexo s)
 ```
