@@ -15,4 +15,6 @@ docker run -it -p 4000:4000 -v /root/hexo:/hexo  --name hexo-test icql/hexo:0.2.
 # 脚本
 /generate.sh (hexo g)
 /start.sh (hexo s)
+
+* 默认会压缩js,css,html，以及对html文件中的 ?rev=@@hash 替换hash版本号
 ```
