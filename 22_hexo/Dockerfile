@@ -15,6 +15,7 @@ RUN cd / \
     && mkdir /opt/hexo \
     && cd /opt/hexo \
     && hexo init \
+    && npm install gulp --save \
     && npm install hexo-generator-json-content@2.2.0 --save \
     && npm install gulp-uglify gulp-cssmin gulp-htmlmin gulp-rev-append --save \
     && rm -rf source/ \
