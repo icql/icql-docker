@@ -18,6 +18,3 @@
 			- /icql/frps/conf:/conf
 			- /icql/frps/log:/log
     ```
-    
-#### 参与贡献
-1. icql
