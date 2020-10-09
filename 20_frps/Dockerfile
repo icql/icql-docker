@@ -2,7 +2,7 @@ FROM alpine:3.10.2
 LABEL maintainer=ICQL
 
 ENV TZ=Asia/Shanghai
-ENV FRP_VERSION 0.33.0
+ENV FRP_VERSION 0.34.1
 
 RUN apk add --update tzdata \
     && wget https://github.com/fatedier/frp/releases/download/v${FRP_VERSION}/frp_${FRP_VERSION}_linux_amd64.tar.gz \
